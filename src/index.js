@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import './index.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ControleClientes from './pages/controleClientes';
 
 
