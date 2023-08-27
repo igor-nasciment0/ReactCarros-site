@@ -1,5 +1,7 @@
+import './index.scss';
+
 import BarraLateral from "../../components/barraLateral";
-import Cabecalho from "../../components/cabecalho";
+import Cabecalho from "../../components/header";
 
 export default function ControleClientes() {
     return(

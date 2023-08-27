@@ -4,13 +4,69 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: #000;
+    background-color: #000000;
+
     height: 100vh;
+    padding: 20px 0;
 
     > img
     {
         width: 81px;
     }
 
-    
+    > h1
+    {
+        font-family: 'Yaldevi';
+        font-size: 18px;
+        font-weight: 700;
+        color: #FFF;
+
+        span
+        {
+            color: #FF7101;
+        }
+
+        margin-bottom: 100px;
+    }
+
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: none;
+
+        li
+        {
+            width: 100%;
+        }
+
+        a
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            font-family: 'Inter';
+            text-decoration: none;
+            color: #FFF;
+            transition: 0.3s;
+        
+            padding: 16px 40px;
+            padding-right: 90px;
+        }
+
+        h2
+        {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        a:hover
+        {
+            background-color: #8837C7;
+        }
+    }
 }
