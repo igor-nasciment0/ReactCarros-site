@@ -6,7 +6,7 @@ export default function Form(props) {
 
     let [tiposVeiculo, setTiposVeiculo] = useState([]);
 
-    setTiposVeiculo(await axios.get())
+    setTiposVeiculo(axios.get())
 
     return(
         <div className="formulario-insercao">
