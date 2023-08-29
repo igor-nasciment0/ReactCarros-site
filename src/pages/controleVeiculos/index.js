@@ -3,17 +3,16 @@ import './index.scss';
 import BarraLateral from "../../components/barraLateral";
 import Cabecalho from "../../components/header";
 import Form from '../../components/form';
-import { useState } from 'react';
 
 export default function ControleVeiculos() {
 
-    const [inputsForm, setInputsForm] = useState([
-        {nome: "Tipo", tipo: ""},
+    const inputsForm = [
+        {nome: "Tipo", tipo: "select"},
         {nome: "Modelo", tipo: "text"},
         {nome: "Marca", tipo: "text"},
         {nome: "Ano", tipo: "number"},
         {nome: "Placa", tipo: "text"}
-    ])
+    ]
 
     return(
         <div className="pagina-clientes">
@@ -26,7 +25,7 @@ export default function ControleVeiculos() {
                     <h1>Área Administrativa</h1>
                     <h2>Controle de Veículos</h2>
 
-                    <Form inputs={inputsForm} titulo="Novo Veículo"/> 
+                    <Form inputs={inputsForm} titulo="Novo Veículo" /> 
                     
                     <div className="lista-clientes">
                         <h2>Lista de Clientes</h2>
