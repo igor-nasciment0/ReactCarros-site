@@ -56,6 +56,18 @@
             margin-bottom: 3px;
         }
 
+        select
+        {
+            border: none;
+            outline: none;
+        }
+
+        select:focus-visible
+        {
+            border: none;
+            outline: none;
+        }
+
         button
         {
             font-family: 'Inter';

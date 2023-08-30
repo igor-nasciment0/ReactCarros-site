@@ -40,9 +40,7 @@ export default function ControleClientes() {
 
         let url = 'http://localhost:5000/cliente';
 
-        let resposta = await axios.post(url, newCliente);
-
-        await listarClientes();
+        await axios.post(url, newCliente);
     }
 
     async function listarClientes()
@@ -57,9 +55,7 @@ export default function ControleClientes() {
     {
         let url = `http://localhost:5000/cliente/${id}`;
 
-        let resposta = await axios.delete(url);
-
-        await listarClientes();
+        await axios.delete(url);
     }
 
     async function alterarCliente()
@@ -75,7 +71,7 @@ export default function ControleClientes() {
             cnh: cnhCliente
         };
 
-        let resposta = await axios.put(url, newCliente);
+       await axios.put(url, newCliente);
     }
 
     function atualizarVariaveis(cliente) {
@@ -89,12 +85,8 @@ export default function ControleClientes() {
     }
 
     useEffect(() => {
-        async function listar() {
-            await listarClientes();
-        }
-
-        listar();
-    }, [nomePesquisa])
+        listarClientes()
+    }, []);
 
     return(
         <div className="pagina-clientes">
